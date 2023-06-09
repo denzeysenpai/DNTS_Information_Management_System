@@ -34,7 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.toggleButtonBunifuItachi1 = new ItachiUIBunifu.ToggleButtonBunifuItachi();
             this.buttonBunifuItachi2 = new ItachiUIBunifu.ButtonBunifuItachi();
-            this.buttonBunifuItachi1 = new ItachiUIBunifu.ButtonBunifuItachi();
+            this.btnLogIn = new ItachiUIBunifu.ButtonBunifuItachi();
             this.lblUserName = new System.Windows.Forms.Label();
             this.borderPassWord = new System.Windows.Forms.Panel();
             this.pnlPassWord = new System.Windows.Forms.Panel();
@@ -65,7 +65,7 @@
             this.pnlLogInPanel.Controls.Add(this.label2);
             this.pnlLogInPanel.Controls.Add(this.toggleButtonBunifuItachi1);
             this.pnlLogInPanel.Controls.Add(this.buttonBunifuItachi2);
-            this.pnlLogInPanel.Controls.Add(this.buttonBunifuItachi1);
+            this.pnlLogInPanel.Controls.Add(this.btnLogIn);
             this.pnlLogInPanel.Controls.Add(this.lblUserName);
             this.pnlLogInPanel.Controls.Add(this.borderPassWord);
             this.pnlLogInPanel.Controls.Add(this.borderUsername);
@@ -125,26 +125,27 @@
             this.buttonBunifuItachi2.TextColor = System.Drawing.Color.White;
             this.buttonBunifuItachi2.UseVisualStyleBackColor = false;
             // 
-            // buttonBunifuItachi1
+            // btnLogIn
             // 
-            this.buttonBunifuItachi1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(190)))), ((int)(((byte)(227)))));
-            this.buttonBunifuItachi1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(190)))), ((int)(((byte)(227)))));
-            this.buttonBunifuItachi1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.buttonBunifuItachi1.BorderRadius = 15;
-            this.buttonBunifuItachi1.BorderSize = 0;
-            this.buttonBunifuItachi1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(190)))), ((int)(((byte)(227)))));
-            this.buttonBunifuItachi1.FlatAppearance.BorderSize = 0;
-            this.buttonBunifuItachi1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(190)))), ((int)(((byte)(227)))));
-            this.buttonBunifuItachi1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBunifuItachi1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBunifuItachi1.ForeColor = System.Drawing.Color.White;
-            this.buttonBunifuItachi1.Location = new System.Drawing.Point(37, 345);
-            this.buttonBunifuItachi1.Name = "buttonBunifuItachi1";
-            this.buttonBunifuItachi1.Size = new System.Drawing.Size(312, 48);
-            this.buttonBunifuItachi1.TabIndex = 2;
-            this.buttonBunifuItachi1.Text = "LOGIN";
-            this.buttonBunifuItachi1.TextColor = System.Drawing.Color.White;
-            this.buttonBunifuItachi1.UseVisualStyleBackColor = false;
+            this.btnLogIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(190)))), ((int)(((byte)(227)))));
+            this.btnLogIn.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(190)))), ((int)(((byte)(227)))));
+            this.btnLogIn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnLogIn.BorderRadius = 15;
+            this.btnLogIn.BorderSize = 0;
+            this.btnLogIn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(190)))), ((int)(((byte)(227)))));
+            this.btnLogIn.FlatAppearance.BorderSize = 0;
+            this.btnLogIn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(190)))), ((int)(((byte)(227)))));
+            this.btnLogIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogIn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogIn.ForeColor = System.Drawing.Color.White;
+            this.btnLogIn.Location = new System.Drawing.Point(37, 345);
+            this.btnLogIn.Name = "btnLogIn";
+            this.btnLogIn.Size = new System.Drawing.Size(312, 48);
+            this.btnLogIn.TabIndex = 2;
+            this.btnLogIn.Text = "LOGIN";
+            this.btnLogIn.TextColor = System.Drawing.Color.White;
+            this.btnLogIn.UseVisualStyleBackColor = false;
+            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
             // lblUserName
             // 
@@ -360,7 +361,7 @@
         private System.Windows.Forms.TextBox txtPassWord;
         private System.Windows.Forms.Label lblUserName;
         private System.Windows.Forms.Label lblPassWord;
-        private ItachiUIBunifu.ButtonBunifuItachi buttonBunifuItachi1;
+        private ItachiUIBunifu.ButtonBunifuItachi btnLogIn;
         private ItachiUIBunifu.ToggleButtonBunifuItachi toggleButtonBunifuItachi1;
         private System.Windows.Forms.Label label2;
         private ItachiUIBunifu.ButtonBunifuItachi buttonBunifuItachi2;

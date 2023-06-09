@@ -2,11 +2,14 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace dnts.Forms
 {
     public partial class LogInForm : Form
     {
+        readonly SqlConnection conn = new SqlConnection("C:\\USERS\\USER\\SOURCE\\REPOS\\DNTS_INFORMATION_MANAGEMENT_SYSTEM\\CODE\\DATABASE1.MDF");
         SeiyaMarx Design = new SeiyaMarx();
         public LogInForm()
         {
@@ -18,7 +21,7 @@ namespace dnts.Forms
             Design.RoundCorners(pnlPassWord, 25);
             Design.RoundCorners(borderPassWord, 25);
 
-
+            
         }
 
         private void LogInForm_Load(object sender, EventArgs e)
@@ -53,7 +56,7 @@ namespace dnts.Forms
             }
 
         }
-
+        
         private void UserNameTextChanged(object sender, EventArgs e)
         {
             if (txtUserName.Text != null && txtUserName.Text != string.Empty)
@@ -88,6 +91,11 @@ namespace dnts.Forms
             }
             else
                 lblPassWord.BringToFront();
+        }
+
+        private void btnLogIn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

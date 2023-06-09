@@ -17,7 +17,7 @@ namespace dnts
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UIForALUs());
+            Application.Run(new AttendanceForm());
         }
     }
 }
